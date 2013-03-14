@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DownloadWindow</class>
+ <widget class="QDialog" name="DownloadWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>620</width>
+    <height>346</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Download File</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../../Downloads/1355009308_Gnome-Face-Monkey-64.png</normaloff>../../../Downloads/1355009308_Gnome-Face-Monkey-64.png</iconset>
+  </property>
+  <property name="windowOpacity">
+   <double>1.000000000000000</double>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QFrame" name="frame">
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QLabel" name="label_4">
+        <property name="font">
+         <font>
+          <pointsize>18</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+          <underline>false</underline>
+         </font>
+        </property>
+        <property name="text">
+         <string>Download File</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="frame_2">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>2</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::NoFrame</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QFormLayout" name="formLayout">
+         <property name="fieldGrowthPolicy">
+          <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+         </property>
+         <property name="formAlignment">
+          <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+         </property>
+         <property name="leftMargin">
+          <number>15</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label">
+           <property name="font">
+            <font>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Requested File:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLabel" name="requestedFileLabel">
+           <property name="text">
+            <string>requestedfilename</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_2">
+           <property name="font">
+            <font>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>File Destination:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QFrame" name="frame_6">
+           <property name="frameShape">
+            <enum>QFrame::NoFrame</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <property name="spacing">
+             <number>6</number>
+            </property>
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QLineEdit" name="fileDestinationInput">
+              <property name="focusPolicy">
+               <enum>Qt::ClickFocus</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="browseButton">
+              <property name="focusPolicy">
+               <enum>Qt::NoFocus</enum>
+              </property>
+              <property name="text">
+               <string>Change Destination</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_5">
+           <property name="font">
+            <font>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>File Size:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QLabel" name="sizeLabel">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="label_6">
+           <property name="font">
+            <font>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>MD5 Checksum:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QLabel" name="sumLabel">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <widget class="QLabel" name="label_7">
+           <property name="font">
+            <font>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>File Owner:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="1">
+          <widget class="QLabel" name="userLabel">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="frame_4">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>2</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::NoFrame</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <property name="leftMargin">
+          <number>15</number>
+         </property>
+         <property name="rightMargin">
+          <number>9</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label_3">
+           <property name="text">
+            <string>Download Progress:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QProgressBar" name="progressBar">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>2</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="value">
+            <number>0</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="speedLabel">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="frame_3">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>1</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="contextMenuPolicy">
+         <enum>Qt::NoContextMenu</enum>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::NoFrame</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QFrame" name="frame_5">
+           <property name="frameShape">
+            <enum>QFrame::NoFrame</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="cancelButton">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="text">
+            <string>Cancel</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="downloadButton">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>Download File</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

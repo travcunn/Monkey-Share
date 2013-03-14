@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1174</width>
+    <height>663</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Monkey Share</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../Downloads/1355009308_Gnome-Face-Monkey-64.png</normaloff>../../Downloads/1355009308_Gnome-Face-Monkey-64.png</iconset>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <property name="autoFillBackground">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QFrame" name="frame">
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="margin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QTabWidget" name="tabWidget_2">
+         <property name="maximumSize">
+          <size>
+           <width>175</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="focusPolicy">
+          <enum>Qt::NoFocus</enum>
+         </property>
+         <property name="contextMenuPolicy">
+          <enum>Qt::DefaultContextMenu</enum>
+         </property>
+         <property name="tabPosition">
+          <enum>QTabWidget::North</enum>
+         </property>
+         <property name="tabShape">
+          <enum>QTabWidget::Rounded</enum>
+         </property>
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <property name="elideMode">
+          <enum>Qt::ElideNone</enum>
+         </property>
+         <property name="usesScrollButtons">
+          <bool>true</bool>
+         </property>
+         <widget class="QWidget" name="tab_3">
+          <attribute name="title">
+           <string>Online Peers</string>
+          </attribute>
+          <layout class="QVBoxLayout" name="verticalLayout_4">
+           <item>
+            <widget class="QListWidget" name="peersView">
+             <property name="frameShape">
+              <enum>QFrame::NoFrame</enum>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="widget" native="true">
+         <layout class="QVBoxLayout" name="verticalLayout_5">
+          <property name="margin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QTabWidget" name="tabWidget_3">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>2</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <widget class="QWidget" name="tab_9">
+             <attribute name="title">
+              <string>File Browser</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout_6">
+              <item>
+               <widget class="QTableWidget" name="filesView">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::Box</enum>
+                </property>
+                <property name="alternatingRowColors">
+                 <bool>true</bool>
+                </property>
+                <property name="selectionMode">
+                 <enum>QAbstractItemView::ExtendedSelection</enum>
+                </property>
+                <property name="selectionBehavior">
+                 <enum>QAbstractItemView::SelectRows</enum>
+                </property>
+                <property name="showGrid">
+                 <bool>true</bool>
+                </property>
+                <property name="gridStyle">
+                 <enum>Qt::SolidLine</enum>
+                </property>
+                <property name="sortingEnabled">
+                 <bool>true</bool>
+                </property>
+                <property name="wordWrap">
+                 <bool>true</bool>
+                </property>
+                <property name="columnCount">
+                 <number>3</number>
+                </property>
+                <attribute name="horizontalHeaderVisible">
+                 <bool>true</bool>
+                </attribute>
+                <attribute name="horizontalHeaderCascadingSectionResizes">
+                 <bool>true</bool>
+                </attribute>
+                <attribute name="horizontalHeaderHighlightSections">
+                 <bool>true</bool>
+                </attribute>
+                <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+                 <bool>true</bool>
+                </attribute>
+                <attribute name="horizontalHeaderStretchLastSection">
+                 <bool>true</bool>
+                </attribute>
+                <attribute name="verticalHeaderVisible">
+                 <bool>true</bool>
+                </attribute>
+                <attribute name="verticalHeaderHighlightSections">
+                 <bool>true</bool>
+                </attribute>
+                <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+                 <bool>false</bool>
+                </attribute>
+                <attribute name="verticalHeaderStretchLastSection">
+                 <bool>false</bool>
+                </attribute>
+                <column>
+                 <property name="text">
+                  <string>File Name</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Size</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Checksum</string>
+                 </property>
+                </column>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="downloadButton">
+                <property name="text">
+                 <string>Download Selected FIle</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="tab">
+             <attribute name="title">
+              <string>Search</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout">
+              <item>
+               <widget class="QFrame" name="frame_2">
+                <property name="frameShape">
+                 <enum>QFrame::NoFrame</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_2">
+                 <item>
+                  <widget class="QLabel" name="label_2">
+                   <property name="font">
+                    <font>
+                     <pointsize>19</pointsize>
+                     <weight>50</weight>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Search for files:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QFrame" name="frame_3">
+                   <property name="frameShape">
+                    <enum>QFrame::NoFrame</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QFormLayout" name="formLayout">
+                    <property name="fieldGrowthPolicy">
+                     <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+                    </property>
+                    <property name="leftMargin">
+                     <number>30</number>
+                    </property>
+                    <item row="1" column="1">
+                     <widget class="QFrame" name="frame_4">
+                      <property name="frameShape">
+                       <enum>QFrame::NoFrame</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <layout class="QHBoxLayout" name="horizontalLayout_2">
+                       <property name="margin">
+                        <number>0</number>
+                       </property>
+                      </layout>
+                      <zorder>label_3</zorder>
+                     </widget>
+                    </item>
+                    <item row="3" column="1">
+                     <widget class="QFrame" name="frame_5">
+                      <property name="frameShape">
+                       <enum>QFrame::NoFrame</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <layout class="QHBoxLayout" name="horizontalLayout_3">
+                       <property name="margin">
+                        <number>0</number>
+                       </property>
+                       <item>
+                        <widget class="QLineEdit" name="searchInput"/>
+                       </item>
+                       <item>
+                        <widget class="QPushButton" name="searchButton">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="layoutDirection">
+                          <enum>Qt::LeftToRight</enum>
+                         </property>
+                         <property name="text">
+                          <string>Search</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                    <item row="3" column="0">
+                     <widget class="QLabel" name="label_4">
+                      <property name="font">
+                       <font>
+                        <pointsize>13</pointsize>
+                        <weight>75</weight>
+                        <bold>true</bold>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>Search Terms:</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QListWidget" name="searchResultsView">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                     <horstretch>0</horstretch>
+                     <verstretch>1</verstretch>
+                    </sizepolicy>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="downloadSearchButton">
+                   <property name="text">
+                    <string>Download Selected File</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="../../MonkeyShare Gui/resources.qrc">:/monkeyshare/1355009308_Gnome-Face-Monkey-64.png</pixmap>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1174</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionSettings"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuPeers">
+    <property name="title">
+     <string>Peers</string>
+    </property>
+    <addaction name="actionAdd_Peer"/>
+    <addaction name="actionRemove_Peer"/>
+    <addaction name="actionRefresh_Peers"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionAbout_2"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuPeers"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="contextMenuPolicy">
+    <enum>Qt::PreventContextMenu</enum>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <property name="allowedAreas">
+    <set>Qt::NoToolBarArea</set>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonIconOnly</enum>
+   </property>
+   <property name="floatable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionAdd_Peer_2"/>
+   <addaction name="actionRemove_Peer_2"/>
+   <addaction name="actionRefresh_Peers_2"/>
+   <addaction name="actionSettings_2"/>
+  </widget>
+  <action name="actionSettings">
+   <property name="text">
+    <string>Settings</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionAdd_Peer">
+   <property name="text">
+    <string>Add Peer</string>
+   </property>
+  </action>
+  <action name="actionRemove_Peer">
+   <property name="text">
+    <string>Remove Peer</string>
+   </property>
+  </action>
+  <action name="actionRefresh_Peers">
+   <property name="text">
+    <string>Refresh Peers</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionAdd_Peer_2">
+   <property name="icon">
+    <iconset resource="../../MonkeyShare Gui/resources.qrc">
+     <normaloff>:/monkeyshare/onebit_31.png</normaloff>:/monkeyshare/onebit_31.png</iconset>
+   </property>
+   <property name="text">
+    <string>Add Peer</string>
+   </property>
+   <property name="toolTip">
+    <string>Add a new peer</string>
+   </property>
+  </action>
+  <action name="actionRemove_Peer_2">
+   <property name="icon">
+    <iconset resource="../../MonkeyShare Gui/resources.qrc">
+     <normaloff>:/monkeyshare/onebit_32.png</normaloff>:/monkeyshare/onebit_32.png</iconset>
+   </property>
+   <property name="text">
+    <string>Remove Peer</string>
+   </property>
+   <property name="toolTip">
+    <string>Remove an existing peer</string>
+   </property>
+  </action>
+  <action name="actionRefresh_Peers_2">
+   <property name="icon">
+    <iconset resource="../../MonkeyShare Gui/resources.qrc">
+     <normaloff>:/monkeyshare/1355012772_arrow_cycle.png</normaloff>:/monkeyshare/1355012772_arrow_cycle.png</iconset>
+   </property>
+   <property name="text">
+    <string>Refresh Peers</string>
+   </property>
+   <property name="toolTip">
+    <string>Refresh all peers</string>
+   </property>
+  </action>
+  <action name="actionSettings_2">
+   <property name="icon">
+    <iconset resource="../../MonkeyShare Gui/resources.qrc">
+     <normaloff>:/monkeyshare/settings.png</normaloff>:/monkeyshare/settings.png</iconset>
+   </property>
+   <property name="text">
+    <string>Settings</string>
+   </property>
+   <property name="toolTip">
+    <string>Edit the settings</string>
+   </property>
+  </action>
+  <action name="actionAbout_2">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../../MonkeyShare Gui/resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
