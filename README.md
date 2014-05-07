@@ -7,3 +7,18 @@ Originally used to learn about Python and sockets. Someday, I'll rewrite this wi
 
 __Caution:__
 Since entire files are loaded into memory before they are transferred, it's probably not a good idea to send large files. In the future, it will be better to read each line of the file individually.
+
+Screenshots
+-----------
+
+#####File Listing
+![Monkey Share](https://raw.githubusercontent.com/travcunn/Monkey-Share/master/screenshots/monkeyshare.png)
+
+#####File Download
+![File Download](https://raw.githubusercontent.com/travcunn/Monkey-Share/master/screenshots/download.png)
+
+#####User Settings
+![File Download](https://raw.githubusercontent.com/travcunn/Monkey-Share/master/screenshots/settings.png)
+
+#####Add Peer
+![File Download](https://raw.githubusercontent.com/travcunn/Monkey-Share/master/screenshots/addpeer.png)
